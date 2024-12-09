@@ -1,4 +1,3 @@
-D'accord ! Voici un `README.md` complet, clair et détaillé pour votre projet **Contrat de Partenariat Commercial**, en tenant compte des informations et de la structure que vous m'avez fournies.
 
 ```markdown
 # Contrat de Partenariat Commercial

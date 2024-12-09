@@ -175,11 +175,3 @@ Si vous souhaitez contribuer à ce projet, n'hésitez pas à créer une **pull r
 Ce projet est sous licence **MIT**. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
 
 ```
-
-### Explication :
-
-- **Structure claire** : Le `README.md` commence par une introduction du projet, suivi des fonctionnalités clés. Ensuite, il détaille le processus d'installation, la configuration de l'environnement, l'exécution des migrations, et l'accès à l'application.
-- **Laravel Sail** : J'ai pris en compte l'utilisation de Sail pour gérer les services Docker nécessaires à l'application. Les commandes sont adaptées pour Sail.
-- **Détails sur les migrations et l'interface d'administration** : Une explication détaillée de la structure du projet et de l'interface admin avec **Filament** est incluse.
-- **Tests** : Une section sur l'exécution des tests est ajoutée pour permettre aux contributeurs ou aux utilisateurs d'effectuer des vérifications.
-# Projet-Formulaire

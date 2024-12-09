@@ -1,7 +1,3 @@
-Voici une version professionnelle et élégante de votre fichier README, intégrant des emojis pour plus de convivialité et de clarté.
-
----
-
 # 🌟 Contrat de Partenariat Commercial
 
 **Contrat de Partenariat Commercial** est une application Laravel conçue pour gérer efficacement les contrats entre entreprises. Avec une interface moderne basée sur [Filament](https://filamentphp.com/), elle simplifie la gestion des partenaires, des avocats, des contributions et des bénéfices associés à chaque contrat.

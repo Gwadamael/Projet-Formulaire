@@ -1,5 +1,4 @@
 
-```markdown
 # Contrat de Partenariat Commercial
 
 L'application **Contrat de Partenariat Commercial** permet de gérer efficacement les contrats entre entreprises, avec une interface d'administration moderne basée sur **Filament**. Elle facilite la gestion des partenaires, des avocats, des contributions et des bénéfices liés à chaque contrat de partenariat.

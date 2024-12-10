@@ -19,11 +19,9 @@
 
 ## 🛠️ Prérequis
 
-Avant de commencer, assurez-vous d’avoir les outils suivants installés sur votre machine :
+Avant de commencer, assurez-vous d’avoir Docker d'installés sur votre machine :
 
 - **[Docker](https://www.docker.com/)** : Pour gérer les services nécessaires à l’application.
-- **[Composer](https://getcomposer.org/)** : Gestionnaire de dépendances PHP.
-
 ---
 
 ## 📦 Installation

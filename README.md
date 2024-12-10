@@ -53,7 +53,12 @@ cp .env.example .env
 ```bash
 ./vandor/bin/sail up -d
 ```
-Mettez à jour les mots de passes par défaut :
+
+### 5️⃣ Mettez à jour le fichier de configuration `.env`:
+```bash
+vi .env
+```
+*Modifiez au moins les mots de passes par défaut dans le fichier*
 ```env
 DB_PASSWORD=[ UN MOT DE PASSE SÉCURISÉ ]
 REDIS_PASSWORD=[ UN AUTRE MOT DE PASSE SÉCURISÉ ]

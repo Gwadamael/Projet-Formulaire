@@ -36,7 +36,11 @@ cd Projet-Formulaire/
 
 ### 2️⃣ Installez les dépendances avec Docker
 ```bash
-docker run --rm -u "$(id -u):$(id -g)" -v $(pwd):/var/www/html -w /var/www/html laravelsail/php81-composer:latest composer install --ignore-platform-reqs
+docker run --rm \
+    -u "$(id -u):$(id -g)" \
+    -v $(pwd):/var/www/html \
+    -w /var/www/html laravelsail/php82-composer:latest \
+    composer install --ignore-platform-reqs
 ```
 
 ### 3️⃣ Configurez l’environnement
@@ -49,42 +53,31 @@ cp .env.example .env
 ```bash
 ./vandor/bin/sail up -d
 ```
-Mettez à jour les paramètres suivants :
+Mettez à jour les mots de passes par défaut :
 ```env
-APP_NAME=ContratPartenariat
-APP_ENV=production
-APP_KEY=base64:GENERATED_APP_KEY
-APP_DEBUG=false
-APP_URL=http://localhost
-
-DB_CONNECTION=mariadb
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=contrat_db
-DB_USERNAME=root
-DB_PASSWORD=
+DB_PASSWORD=[ UN MOT DE PASSE SÉCURISÉ ]
+REDIS_PASSWORD=[ UN AUTRE MOT DE PASSE SÉCURISÉ ]
+MAIL_PASSWORD=[ ENCORE UN AUTRE MOT DE PASSE SÉCURISÉ ]
 ```
 
-> **Remarque :** La clé `APP_KEY` sera générée automatiquement à l’étape suivante.
-
-### 6️⃣ Générez la clé de l’application
+###  Générez la clé de l’application
 ```bash
 ./vandor/bin/sail artisan key:generate
 ```
 
-### 7️⃣ Exécutez les migrations
+### 6️⃣ Exécutez les migrations
 ```bash
 ./vandor/bin/sail artisan migrate
 ```
 
-### 8️⃣ Créez un utilisateur administrateur
+### 7️⃣ Créez un utilisateur administrateur
 Pour accéder à l’interface d’administration :
 ```bash
 ./vandor/bin/sail artisan make:filament-user
 ```
 Fournissez un nom d’utilisateur, un e-mail et un mot de passe. 🎉
 
-### 9️⃣ Accédez à l’application
+### 8️⃣ Accédez à l’application
 - Interface utilisateur : [http://localhost](http://localhost)  
 - Interface admin Filament : [http://localhost/admin](http://localhost/admin)
 
@@ -134,7 +127,3 @@ Lors de la création d’un contrat, vous devrez renseigner :
 - L’activité du partenariat
 - Le nom et l’adresse du siège
 - La contribution de chaque partenaire
-
----
-💻 *Bon développement !*
----

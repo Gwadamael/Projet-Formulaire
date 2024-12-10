@@ -26,7 +26,9 @@ class AdminPanelProvider extends PanelProvider
             ->default()// Utilise la configuration par défaut de Filament pour le panneau.
             ->id('admin')// Définit l'identifiant du panneau (utilisé pour le routage et la configuration)
             ->path('admin')
-            ->login()// Active la gestion de l'authentification pour ce panneau.
+            ->login()
+            // ->registration()
+            // ->profile()
             ->colors([
                 // Définition des couleurs pour les différents états
                 'danger' => Color::Rose,

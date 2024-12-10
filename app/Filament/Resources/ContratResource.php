@@ -80,11 +80,7 @@ class ContratResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('date_contrat'),
                 Tables\Columns\TextColumn::make('date_terme'),
-                Tables\Columns\TextColumn::make('contributions'),
-                Tables\Columns\TextColumn::make('repartition'),
-                Tables\Columns\TextColumn::make('date_clause'),
                 Tables\Columns\TextColumn::make('juridiction_etat'),
-                Tables\Columns\TextColumn::make('activite'),
                 Tables\Columns\TextColumn::make('nom_partenariat'),
                 Tables\Columns\TextColumn::make('adresse_siege'),
                 Tables\Columns\TextColumn::make('nombre_signataires'),

@@ -145,7 +145,7 @@
 
         <!-- Informations sur le contrat -->
         <div class="field">
-            <p><a>Ce contrat est fait ce jour </a><strong>{{ $contrat->date_contrat }}</strong><a>, en </a><strong>{{ $contrat->nombre_copies }}</strong><a> copies originales, entre :</a></p>
+            <p>Ce contrat est fait ce jour <strong>{{ $contrat->date_contrat }}</strong>, en <strong>{{ $contrat->nombre_copies }}</strong>copies originales, entre :</p>
             <ul>
                 @foreach ($contrat->partenaires as $partenaire)
                     <li><strong>{{ $partenaire->nom }}</strong></li>

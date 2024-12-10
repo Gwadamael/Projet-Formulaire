@@ -49,7 +49,7 @@ cp .env.example .env
 
 ### 4️⃣ Lancez les services avec Sail
 ```bash
-./vandor/bin/ sail up -d
+./vandor/bin/sail up -d
 ```
 Mettez à jour les paramètres suivants :
 ```env

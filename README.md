@@ -49,7 +49,7 @@ cp .env.example .env
 
 ### 4️⃣ Lancez les services avec Sail
 ```bash
-sail up -d
+./vandor/bin/ sail up -d
 ```
 Mettez à jour les paramètres suivants :
 ```env
@@ -71,18 +71,18 @@ DB_PASSWORD=
 
 ### 6️⃣ Générez la clé de l’application
 ```bash
-sail artisan key:generate
+./vandor/bin/sail artisan key:generate
 ```
 
 ### 7️⃣ Exécutez les migrations
 ```bash
-sail artisan migrate
+./vandor/bin/sail artisan migrate
 ```
 
 ### 8️⃣ Créez un utilisateur administrateur
 Pour accéder à l’interface d’administration :
 ```bash
-sail artisan make:filament-user
+./vandor/bin/sail artisan make:filament-user
 ```
 Fournissez un nom d’utilisateur, un e-mail et un mot de passe. 🎉
 
@@ -91,24 +91,6 @@ Fournissez un nom d’utilisateur, un e-mail et un mot de passe. 🎉
 - Interface admin Filament : [http://localhost/admin](http://localhost/admin)
 
 ---
-
-### 🚢 Commandes Sail courantes
-
-- **Démarrer les services :**
-  ```bash
-  sail up -d
-  ```
-- **Arrêter les services :**
-  ```bash
-  sail down
-  ```
-- **Accéder au terminal :**
-  ```bash
-  sail shell
-  ```
-
----
-
 ## 📂 Structure du projet
 
 Voici une vue d'ensemble de la structure du projet :
@@ -138,8 +120,6 @@ contrat-de-partenariat/
     └── index.php             # Point d'entrée
 ```
 
----
-
 ## 🖥️ Interface d’administration avec Filament
 
 L’administration avec Filament facilite la gestion des contrats, des partenaires et des avocats.
@@ -158,39 +138,5 @@ Lors de la création d’un contrat, vous devrez renseigner :
 - La contribution de chaque partenaire
 
 ---
-
-## 🔧 Compatibilité
-
-- **PHP** : 8.2 ou supérieur  
-- **Laravel** : 10.x  
-- **Filament** : 3.x  
-- **Docker** : 20.x ou supérieur  
-
----
-
-## 🧪 Tests
-
-Pour exécuter les tests unitaires et d’intégration :
-```bash
-sail test
-```
-
----
-
-## 🤝 Contribution
-
-Les contributions sont les bienvenues !  
-- 📥 Clonez le projet.  
-- 🛠️ Ajoutez vos fonctionnalités ou corrigez des bugs.  
-- 📤 Proposez une pull request.
-
-N’hésitez pas à ouvrir une **issue** pour signaler des bugs ou suggérer des améliorations.
-
----
-
-🎉 **Merci d’avoir choisi Contrat de Partenariat Commercial !**  
-Si vous avez des questions, contactez-moi ou ouvrez une issue sur GitHub.
-
 💻 *Bon développement !*
-
 ---

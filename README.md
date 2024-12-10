@@ -30,7 +30,7 @@ Suivez les étapes ci-dessous pour installer et configurer l'application.
 
 ### 1️⃣ Clonez le dépôt
 ```bash
-git clone https://github.com/votre-utilisateur/contrat-de-partenariat.git
+git clone https://github.com/Gwadamael/contrat-de-partenariat.git
 cd contrat-de-partenariat
 ```
 

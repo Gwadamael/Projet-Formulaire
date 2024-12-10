@@ -2,6 +2,11 @@
 
 **Contrat de Partenariat Commercial** est une application Laravel conçue pour gérer efficacement les contrats entre entreprises. Avec une interface moderne basée sur [Filament](https://filamentphp.com/), elle simplifie la gestion des partenaires, des avocats, des contributions et des bénéfices associés à chaque contrat.
 
+> Cette application se distingue par sa simplicité d'utilisation et son interface moderne, idéale pour toute entreprise cherchant à automatiser la gestion de ses partenariats.
+
+[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Laravel Version](https://img.shields.io/badge/Laravel-10.x-red)](https://laravel.com)
+
 ---
 
 ## 🚀 Fonctionnalités
@@ -40,13 +45,19 @@ composer require laravel/sail --dev
 composer install
 ```
 
-### 3️⃣ Lancez les services avec Sail
+### 3️⃣ Configurez un alias pour `sail` (facultatif)
+Pour simplifier les commandes utilisant Sail, configurez un alias :
 ```bash
-./vendor/bin/sail up -d
+alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
 ```
 
-### 4️⃣ Configurez l'environnement
-Renommez le fichier `.env.example` en `.env` :
+### 4️⃣ Lancez les services avec Sail
+```bash
+sail up -d
+```
+
+### 5️⃣ Configurez l'environnement
+Renommez le fichier `.env.example` en `.env` :
 ```bash
 cp .env.example .env
 ```
@@ -67,26 +78,47 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-### 5️⃣ Générez la clé de l'application
+> **Remarque :** La clé `APP_KEY` sera générée automatiquement à l'étape suivante.
+
+### 6️⃣ Générez la clé de l'application
 ```bash
-./vendor/bin/sail artisan key:generate
+sail artisan key:generate
 ```
 
-### 6️⃣ Exécutez les migrations
+### 7️⃣ Exécutez les migrations
 ```bash
-./vendor/bin/sail artisan migrate
+sail artisan migrate
 ```
 
-### 7️⃣ Créez un utilisateur administrateur
+### 8️⃣ Créez un utilisateur administrateur
 Pour accéder à l'interface d'administration :
 ```bash
-./vendor/bin/sail artisan make:filament-user
+sail artisan make:filament-user
 ```
 Fournissez un nom d'utilisateur, un e-mail, et un mot de passe. 🎉
 
-### 8️⃣ Accédez à l'application
-Ouvrez votre navigateur et rendez-vous à [http://localhost](http://localhost).  
-Pour l'interface admin Filament : [http://localhost/admin](http://localhost/admin).
+### 9️⃣ Accédez à l'application
+- Interface utilisateur : [http://localhost](http://localhost)  
+- Interface admin Filament : [http://localhost/admin](http://localhost/admin)
+
+---
+
+### 🚢 Commandes Sail courantes
+
+- **Démarrer les services :**
+  ```bash
+  sail up -d
+  ```
+- **Arrêter les services :**
+  ```bash
+  sail down
+  ```
+- **Accéder au terminal :**
+  ```bash
+  sail shell
+  ```
+
+---
 
 ---
 
@@ -130,7 +162,7 @@ L'administration avec Filament facilite la gestion des contrats, partenaires et 
 - **Création/édition** : Ajoutez ou modifiez des contrats avec des partenaires et avocats associés.
 - **Gestion des partenaires** : Sélectionnez plusieurs partenaires dans un formulaire intuitif.
 
-### Exemple :
+### Création d'un contrat :
 Lors de la création d'un contrat, vous devrez renseigner :
 - La date du contrat
 - La date de fin
@@ -140,11 +172,20 @@ Lors de la création d'un contrat, vous devrez renseigner :
 
 ---
 
+## 🔧 Compatibilité
+
+- **PHP** : 8.1 ou supérieur  
+- **Laravel** : 10.x  
+- **Filament** : 3.x  
+- **Docker** : 20.x ou supérieur  
+
+---
+
 ## 🧪 Tests
 
 Pour exécuter les tests unitaires et d'intégration :
 ```bash
-./vendor/bin/sail test
+sail test
 ```
 
 ---
@@ -160,13 +201,11 @@ N'hésitez pas à ouvrir une **issue** pour signaler des bugs ou suggérer des a
 
 ---
 
-## 📝 Licence
-
-Ce projet est sous licence MIT. Consultez le fichier [LICENSE](LICENSE) pour plus de détails.
-
 ---
 
 🎉 **Merci d'avoir choisi Contrat de Partenariat Commercial !**  
 Si vous avez des questions, contactez-moi ou ouvrez une issue sur GitHub.
 
-💻 *Bon développement !*
+💻 *Bon développement !*  
+
+---

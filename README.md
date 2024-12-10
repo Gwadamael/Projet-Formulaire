@@ -2,8 +2,6 @@
 
 **Contrat de Partenariat Commercial** est une application Laravel conçue pour gérer efficacement les contrats entre entreprises. Grâce à une interface moderne basée sur [Filament](https://filamentphp.com/), cette application simplifie la gestion des partenaires, des avocats, des contributions et des bénéfices associés à chaque contrat.
 
-> Cette application se distingue par sa simplicité d’utilisation et son interface moderne, idéale pour toute entreprise cherchant à automatiser la gestion de ses partenariats.
-
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)  
 [![Laravel Version](https://img.shields.io/badge/Laravel-10.x-red)](https://laravel.com)
 

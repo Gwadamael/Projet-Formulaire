@@ -65,24 +65,24 @@ REDIS_PASSWORD=[ UN AUTRE MOT DE PASSE SÉCURISÉ ]
 MAIL_PASSWORD=[ ENCORE UN AUTRE MOT DE PASSE SÉCURISÉ ]
 ```
 
-###  Générez la clé de l’application
+### 6️⃣ Générez la clé de l’application
 ```bash
 ./vandor/bin/sail artisan key:generate
 ```
 
-### 6️⃣ Exécutez les migrations
+### 7️⃣ Exécutez les migrations
 ```bash
 ./vandor/bin/sail artisan migrate
 ```
 
-### 7️⃣ Créez un utilisateur administrateur
+### 8️⃣ Créez un utilisateur administrateur
 Pour accéder à l’interface d’administration :
 ```bash
 ./vandor/bin/sail artisan make:filament-user
 ```
 Fournissez un nom d’utilisateur, un e-mail et un mot de passe. 🎉
 
-### 8️⃣ Accédez à l’application
+### 9️⃣ Accédez à l’application
 - Interface utilisateur : [http://localhost](http://localhost)  
 - Interface admin Filament : [http://localhost/admin](http://localhost/admin)
 

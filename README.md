@@ -75,7 +75,7 @@ MAIL_PASSWORD=[ ENCORE UN AUTRE MOT DE PASSE SÉCURISÉ ]
 ./vendor/bin/sail artisan key:generate
 ```
 
-### 8️⃣ Si ça ne fonctionne pas ... 
+### 8️⃣ Installer la bdd
 ```bash
 ./vendor/bin/sail artisan sail:install
 ```

@@ -4,7 +4,7 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\PartenaireResource\Pages;
 use App\Filament\Resources\PartenaireResource\RelationManagers;
-use App\Filament\Resources\PartenaireResource\RelationManagers\ContratsRelationManger;
+use App\Filament\Resources\PartenaireResource\RelationManagers\ContratsRelationManager;
 use App\Models\Partenaire;
 use Filament\Forms\Form;
 use Filament\Forms\Components\TextInput;

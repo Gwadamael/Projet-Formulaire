@@ -81,12 +81,11 @@ MAIL_PASSWORD=[ ENCORE UN AUTRE MOT DE PASSE SÉCURISÉ ]
 ```
 
 ### 9️⃣ Si ça ne fonctionne pas ... 
-Pour accéder à l’interface d’administration :
 ```bash
 ./vendor/bin/sail artisan sail:install
 ```
 
-Déselectionner Mysql et selctionner Mariadb . 🎉
+Déselectionner Mysql et sélctionner Mariadb . 🎉
 
 ### Accédez à l’application
 - Interface utilisateur : [http://localhost](http://localhost)  

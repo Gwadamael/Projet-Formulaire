@@ -39,16 +39,16 @@ class ContratResource extends Resource
                 Section::make('Contrat')
                     ->description('Infos Contrat')
                     ->schema([
-                        DatePicker::make('date_contrat'),
-                        DatePicker::make('date_terme'),
-                        DatePicker::make('date_clause'),
-                        Textarea::make('contributions')->maxLength(255),
-                        TextInput::make('repartition')->maxLength(105),
-                        Textarea::make('juridiction_etat')->maxLength(255),
-                        TextInput::make('activite')->maxLength(105),
-                        TextInput::make('nom_partenariat')->maxLength(105),
-                        TextInput::make('adresse_siege')->maxLength(105),
-                        TextInput::make('nombre_signataires')->numeric(),
+                        DatePicker::make('date_contrat')->required(),
+                        DatePicker::make('date_terme')->required(),
+                        DatePicker::make('date_clause')->required(),
+                        Textarea::make('contributions')->maxLength(255)->required(),
+                        TextInput::make('repartition')->maxLength(105)->required(),
+                        Textarea::make('juridiction_etat')->maxLength(255)->required(),
+                        TextInput::make('activite')->maxLength(105)->required(),
+                        TextInput::make('nom_partenariat')->maxLength(105)->required(),
+                        TextInput::make('adresse_siege')->maxLength(105)->required(),
+                        TextInput::make('nombre_signataires')->numeric()->required(),
 
                     ])->columns(2),
                     // Section pour sélectionner un avocat

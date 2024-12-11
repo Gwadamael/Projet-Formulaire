@@ -51,7 +51,7 @@ cp .env.example .env
 
 ### 4️⃣ Autoriser les permissions en écriture
 ```bash
-    sudo chmod -R guo+w .
+sudo chmod -R guo+w .
 ```
 
 ### 5️⃣ Lancez les services avec Sail
@@ -75,17 +75,16 @@ MAIL_PASSWORD=[ ENCORE UN AUTRE MOT DE PASSE SÉCURISÉ ]
 ./vendor/bin/sail artisan key:generate
 ```
 
-### 8️⃣ Exécutez les migrations
-```bash
-./vendor/bin/sail artisan migrate
-```
-
-### 9️⃣ Si ça ne fonctionne pas ... 
+### 8️⃣ Si ça ne fonctionne pas ... 
 ```bash
 ./vendor/bin/sail artisan sail:install
 ```
+Déselectionner Mysql et sélctionner Mariadb.
 
-Déselectionner Mysql et sélctionner Mariadb . 🎉
+### 9️⃣ Exécutez les migrations
+```bash
+./vendor/bin/sail artisan migrate
+```
 
 ### Accédez à l’application
 - Interface utilisateur : [http://localhost](http://localhost)  

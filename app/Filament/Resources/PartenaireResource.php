@@ -4,6 +4,7 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\PartenaireResource\Pages;
 use App\Filament\Resources\PartenaireResource\RelationManagers;
+use App\Filament\Resources\PartenaireResource\RelationManagers\ContratsRelationManger;
 use App\Models\Partenaire;
 use Filament\Forms\Form;
 use Filament\Forms\Components\TextInput;
@@ -71,7 +72,7 @@ class PartenaireResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            ContratsRelationManager::class,
         ];
     }
 

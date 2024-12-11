@@ -25,7 +25,7 @@ return new class extends Migration
             $table->string('adresse_siege');
             $table->integer('nombre_signataires');
             // $table->foreignId('partenaire_id')->nullable()->constrained()->cascadeOnDelete();
-            $table->foreignId('avocat_id')->constrained()->cascadeOnDelete();// Clé étrangère reliée a ma table avocat
+            $table->foreignId('avocat_id')->constrained();
             $table->timestamps();
         });
     }

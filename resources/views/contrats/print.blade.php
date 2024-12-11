@@ -156,20 +156,20 @@
         <!-- 1. NOM DU PARTENARIAT ET ACTIVITE -->
         <div class="field">
             <h3>1. NOM DU PARTENARIAT ET ACTIVITE</h3>
-            <p><strong>1.1 Nature des activités :</strong> <a>Les Partenaires cités ci-dessus donnent leur accord d'être considérés comme des partenaires commerciaux pour les fins suivantes :</a></p>
+            <p><strong>1.1 Nature des activités :</strong> Les Partenaires cités ci-dessus donnent leur accord d'être considérés comme des partenaires commerciaux pour les fins suivantes :</p>
             <p><strong>{{ $contrat->activite }}</strong></p>
 
-            <p><strong>1.2 Nom :</strong> <a>Les Partenaires cités ci-dessus donnent leur accord, pour que le partenariat commercial soit exercé sous le nom:</a></p>
+            <p><strong>1.2 Nom :</strong> Les Partenaires cités ci-dessus donnent leur accord, pour que le partenariat commercial soit exercé sous le nom:</p>
             <p><strong>{{ $contrat->nom_partenariat }}</strong></p>
 
-            <p><strong>1.3 Adresse officielle :</strong> <a>Les Partenaires cités ci-dessus donnent leur accord pour que le siège du partenariat commercial soit :</a></p>
+            <p><strong>1.3 Adresse officielle :</strong> Les Partenaires cités ci-dessus donnent leur accord pour que le siège du partenariat commercial soit :</p>
             <p><strong>{{ $contrat->adresse_siege }}</strong></p>
         </div>
 
         <!-- 2. TERMES -->
         <div class="field">
             <h3>2. TERMES</h3>
-            <p><strong>2.1 :</strong> <a>Le partenariat commence le</a> <strong>{{ $contrat->date_terme }}</strong><a> et continue jusqu'à la fin de cet accord.</a></p>
+            <p><strong>2.1 :</strong> Le partenariat commence le <strong>{{ $contrat->date_terme }}</strong> et continue jusqu'à la fin de cet accord.</p>
         </div>
 
         <!-- 3. CONTRIBUTION AU PARTENARIAT -->
@@ -182,72 +182,72 @@
         <!-- 4. RÉPARTITION DES BÉNÉFICES ET DES PERTES -->
         <div class="field">
             <h3>4. RÉPARTITION DES BÉNÉFICES ET DES PERTES</h3>
-            <p><a>Les Partenaires se partageront les profits et les pertes du partenariat commercial de la manière suivante :</a></p>
+            <p>Les Partenaires se partageront les profits et les pertes du partenariat commercial de la manière suivante :</p>
             <p><strong>{{ $contrat->repartition }}</strong></p>
         </div>
 
         <!-- 5. PARTENAIRES ADDITIONNELS -->
         <div class="field">
             <h3>5. PARTENAIRES ADDITIONNELS</h3>
-            <p><strong>5.1 :</strong> <a>Aucune personne ne peut être ajoutée en tant que partenaire et aucune autre activité ne peut être menée par le partenariat sans le consentement écrit de tous les partenaires.</a></p>
+            <p><strong>5.1 :</strong> Aucune personne ne peut être ajoutée en tant que partenaire et aucune autre activité ne peut être menée par le partenariat sans le consentement écrit de tous les partenaires.</p>
         </div>
 
         <!-- 6. MODALITÉS BANCAIRES ET TERMES FINANCIERS -->
         <div class="field">
             <h3>6. MODALITÉS BANCAIRES ET TERMES FINANCIERS</h3>
-            <p><strong>6.1 :</strong> <a>Les Partenaires doivent avoir un compte bancaire au nom du partenariat sur lequel les chèques doivent être signés par au moins</a> <strong>{{ $contrat->nombre_signataires }}</strong><a> des Partenaires.</a></p>
-            <p><strong>6.2 :</strong> <a>Les Partenaires doivent tenir une comptabilité complète du partenariat et la rendre disponible à tous les Partenaires à tout moment.</a></p>
+            <p><strong>6.1 :</strong> Les Partenaires doivent avoir un compte bancaire au nom du partenariat sur lequel les chèques doivent être signés par au moins <strong>{{ $contrat->nombre_signataires }}</strong> des Partenaires.</p>
+            <p><strong>6.2 :</strong> Les Partenaires doivent tenir une comptabilité complète du partenariat et la rendre disponible à tous les Partenaires à tout moment.</p>
         </div>
 
         <!-- 7. GESTION DES ACTIVITÉS DE PARTENARIAT -->
         <div class="field">
             <h3>7. GESTION DES ACTIVITÉS DE PARTENARIAT</h3>
-            <p><strong>7.1 :</strong> <a>Chaque partenaire peut prendre part dans la gestion du partenariat.</a></p>
-            <p><strong>7.2 :</strong> <a>Tout désaccord sera réglé par les partenaires détenant la majorité des parts du partenariat.</a></p>
+            <p><strong>7.1 :</strong> Chaque partenaire peut prendre part dans la gestion du partenariat.</p>
+            <p><strong>7.2 :</strong> Tout désaccord sera réglé par les partenaires détenant la majorité des parts du partenariat.</p>
         </div>
 
         <!-- 8. DÉPART D'UN PARTENAIRE COMMERCIAL -->
         <div class="field">
             <h3>8. DÉPART D'UN PARTENAIRE COMMERCIAL</h3>
-            <p><strong>8.1 :</strong> <a>Si un partenaire se retire du partenariat, les autres partenaires peuvent continuer à exploiter le partenariat sous le même nom.</a></p>
-            <p><strong>8.2 :</strong> <a>Le partenaire qui se retire est tenu de donner un préavis écrit d'au moins soixante (60) jours de son intention de se retirer et est tenu de vendre ses parts du partenariat commercial.</a></p>
-            <p><strong>8.3 :</strong> <a>8.3 Aucun partenaire ne doit céder ses actions dans le partenariat commercial à une autre partie sans le consentement écrit des autres partenaires.</a></p>
-            <p><strong>8.4 :</strong><a>Le ou les partenaires restants paieront au partenaire qui se retire, ou au représentant légal
+            <p><strong>8.1 :</strong> Si un partenaire se retire du partenariat, les autres partenaires peuvent continuer à exploiter le partenariat sous le même nom.</p>
+            <p><strong>8.2 :</strong> Le partenaire qui se retire est tenu de donner un préavis écrit d'au moins soixante (60) jours de son intention de se retirer et est tenu de vendre ses parts du partenariat commercial.</p>
+            <p><strong>8.3 :</strong> 8.3 Aucun partenaire ne doit céder ses actions dans le partenariat commercial à une autre partie sans le consentement écrit des autres partenaires.</p>
+            <p><strong>8.4 :</strong>Le ou les partenaires restants paieront au partenaire qui se retire, ou au représentant légal
                 du partenaire décédé ou handicapé, la valeur de ses parts dans le partenariat, ou (a) la somme
                 de son capital, (b) des emprunts impayés qui lui sont dus, c) sa quote-part des bénéfices nets
                 cumulés non distribués dans son compte, et (d) son intérêt dans toute plus-value
                 préalablement convenue de la valeur du partenariat par rapport à sa valeur comptable.
                 Aucune valeur de bonne volonté ne doit être incluse dans la détermination de la valeur des
-                parts du partenaire.</a></p>
+                parts du partenaire.</p>
         </div>
 
         <!-- 9. CLAUSE DE NON CONCURRENCE -->
         <div class="field">
             <h3>9. CLAUSE DE NON CONCURRENCE</h3>
-            <p><strong>9.1 :</strong> <a>Un partenaire qui se retire ne doit pas s'engager dans une activité concurrente pendant</a> <strong>{{ $contrat->date_clause }}</strong><a>.</a></p>
+            <p><strong>9.1 :</strong> Un partenaire qui se retire ne doit pas s'engager dans une activité concurrente pendant <strong>{{ $contrat->date_clause }}</strong>.</p>
         </div>
 
         <!-- 10. MODIFICATION DE L’ACCORD -->
         <div class="field">
             <h3>10. MODIFICATION DE L’ACCORD</h3>
-            <p><strong>10.1 :</strong> <a>Ce contrat ne peut être modifié sans le consentement écrit de tous les partenaires.</a></p>
+            <p><strong>10.1 :</strong> Ce contrat ne peut être modifié sans le consentement écrit de tous les partenaires.</p>
         </div>
 
         <!-- 11. DIVERS -->
         <div class="field">
             <h3>11. DIVERS</h3>
-            <p><strong>11.1 :</strong> <a>Si une disposition ou une partie d'une disposition de la présente convention de
+            <p><strong>11.1 :</strong> Si une disposition ou une partie d'une disposition de la présente convention de
                 partenariat commercial est non applicable pour une quelconque raison, elle sera dissociée
-                sans affecter la validité du reste de la convention.</a></p>
-            <p><strong>11.2 :</strong> <a>Cet accord de partenariat commercial lie les partenaires commerciaux et pourra servir à
+                sans affecter la validité du reste de la convention.</p>
+            <p><strong>11.2 :</strong> Cet accord de partenariat commercial lie les partenaires commerciaux et pourra servir à
 leurs héritiers, exécuteurs testamentaires, administrateurs, représentants personnels,
-successeurs et ayants droit respectifs.</a></p>
+successeurs et ayants droit respectifs.</p>
         </div>
 
         <!-- 12. JURIDICTION -->
         <div class="field">
             <h3>12. JURIDICTION</h3>
-            <p><strong>12.1 :</strong> <a>Le contrat est régi par les lois de l'État de</a> <strong>{{ $contrat->juridiction_etat }}</strong><a>.</a></p>
+            <p><strong>12.1 :</strong> Le contrat est régi par les lois de l'État de <strong>{{ $contrat->juridiction_etat }}</strong>.</p>
         </div>
     </div>
     <!-- Script pour déclencher l'impression automatiquement -->

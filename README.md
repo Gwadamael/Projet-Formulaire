@@ -49,12 +49,17 @@ Renommez le fichier `.env.example` en `.env` :
 cp .env.example .env
 ```
 
-### 4️⃣ Lancez les services avec Sail
+### 4️⃣ Autorisation de 
 ```bash
-./vandor/bin/sail up -d
+    sudo chmod -R guo+w .
 ```
 
-### 5️⃣ Mettez à jour le fichier de configuration `.env`:
+### 5️⃣ Lancez les services avec Sail
+```bash
+./vendor/bin/sail up -d
+```
+
+### 6️⃣ Mettez à jour le fichier de configuration `.env`:
 ```bash
 vi .env
 ```
@@ -65,24 +70,24 @@ REDIS_PASSWORD=[ UN AUTRE MOT DE PASSE SÉCURISÉ ]
 MAIL_PASSWORD=[ ENCORE UN AUTRE MOT DE PASSE SÉCURISÉ ]
 ```
 
-### 6️⃣ Générez la clé de l’application
+### 7️⃣ Générez la clé de l’application
 ```bash
-./vandor/bin/sail artisan key:generate
+./vendor/bin/sail artisan key:generate
 ```
 
-### 7️⃣ Exécutez les migrations
+### 8️⃣ Exécutez les migrations
 ```bash
-./vandor/bin/sail artisan migrate
+./vendor/bin/sail artisan migrate
 ```
 
-### 8️⃣ Créez un utilisateur administrateur
+### 9️⃣ Créez un utilisateur administrateur
 Pour accéder à l’interface d’administration :
 ```bash
 ./vandor/bin/sail artisan make:filament-user
 ```
 Fournissez un nom d’utilisateur, un e-mail et un mot de passe. 🎉
 
-### 9️⃣ Accédez à l’application
+### Accédez à l’application
 - Interface utilisateur : [http://localhost](http://localhost)  
 - Interface app Filament : [http://localhost/app](http://localhost/app)
 

@@ -84,7 +84,7 @@ Fournissez un nom d’utilisateur, un e-mail et un mot de passe. 🎉
 
 ### 9️⃣ Accédez à l’application
 - Interface utilisateur : [http://localhost](http://localhost)  
-- Interface app Filament : [http://localhost/admin](http://localhost/app)
+- Interface app Filament : [http://localhost/app](http://localhost/app)
 
 ---
 ## 📂 Structure du projet

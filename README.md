@@ -49,7 +49,7 @@ Renommez le fichier `.env.example` en `.env` :
 cp .env.example .env
 ```
 
-### 4️⃣ Autorisation de 
+### 4️⃣ Autoriser les permissions en écriture
 ```bash
     sudo chmod -R guo+w .
 ```
@@ -83,7 +83,7 @@ MAIL_PASSWORD=[ ENCORE UN AUTRE MOT DE PASSE SÉCURISÉ ]
 ### 9️⃣ Créez un utilisateur administrateur
 Pour accéder à l’interface d’administration :
 ```bash
-./vandor/bin/sail artisan make:filament-user
+./vendor/bin/sail artisan make:filament-user
 ```
 Fournissez un nom d’utilisateur, un e-mail et un mot de passe. 🎉
 

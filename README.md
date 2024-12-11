@@ -80,12 +80,13 @@ MAIL_PASSWORD=[ ENCORE UN AUTRE MOT DE PASSE SÉCURISÉ ]
 ./vendor/bin/sail artisan migrate
 ```
 
-### 9️⃣ Créez un utilisateur administrateur
+### 9️⃣ Si ça ne fonctionne pas ... 
 Pour accéder à l’interface d’administration :
 ```bash
-./vendor/bin/sail artisan make:filament-user
+./vendor/bin/sail artisan sail:install
 ```
-Fournissez un nom d’utilisateur, un e-mail et un mot de passe. 🎉
+
+Déselectionner Mysql et selctionner Mariadb . 🎉
 
 ### Accédez à l’application
 - Interface utilisateur : [http://localhost](http://localhost)  
